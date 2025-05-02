@@ -1,0 +1,151 @@
+.verylarge{
+    font-size: 4.5em;
+}
+.large{
+    font-size: 2.5em;
+}
+.cursivo{
+    font-style: italic;
+}
+.negrita{
+    font-weight: bold;
+}
+.bloque{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.lista{
+    
+  list-style-type: none;
+  padding-left: 0;
+}
+.saltoLinea{
+    display: block;
+    line-height: 1.5;
+  }
+body{
+    
+    background-image: url('/workspaces/FS-PT-101-LoL-Blog/src/assets/img/background.gif');
+    background-size: cover;
+}
+.colorFuente{
+    color: rgb(173, 167, 39);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    filter: brightness(1.25);
+}
+.logoHome{
+width: 8em;
+height: 3em;
+}
+.logoHome:hover{
+
+    
+    filter: brightness(1.25);
+}
+.carta{
+    background-color: black;
+}
+.carta:hover{
+    background-color: #071727;
+}
+.boton1{
+    background-color: white;
+    color: white;
+    width: 10em;
+    display: flex;
+    align-self: center;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.boton1:hover{
+    
+    background-color: #ccdae7;
+    color: white;
+}
+.boton1:focus{
+    
+    background-color: #ccdae7 !important;
+    color: white !important;
+    border: none !important;
+}
+.boton1:active{
+    
+    background-color: #ccdae7 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.boton2{
+    background-color: white;
+    color: white;
+    float: left;
+    width: 10em;
+    display: flex;
+    align-self: center;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.boton2:hover{
+    
+    background-color:rgb(173, 167, 39);
+    color: white;
+}
+.boton2:focus{
+    
+    background-color:rgb(173, 167, 39) !important;
+    color: white !important;
+    border: none !important;
+}
+.boton2:active{
+    
+    background-color:rgb(173, 167, 39) !important;
+    color: white !important;
+    border: none !important;
+}
+.dropdownButton{
+    background-color:rgb(173, 167, 39);
+    color: white;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.dropdownButton:hover{
+    background-color:rgb(173, 167, 39);
+    color: white;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    filter: brightness(1.25);
+
+}
+
+    .dropdownButton:focus{
+        background-color:rgb(173, 167, 39) !important;
+        color: white !important;
+        text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                     1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+        filter: brightness(1.25);
+        border: none !important;
+    
+    }
+    .dropdownButton:active{
+        background-color:rgb(173, 167, 39) !important;
+        color: white !important;
+        text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                     1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+        filter: brightness(1.25);
+        border: none !important;
+    
+    }

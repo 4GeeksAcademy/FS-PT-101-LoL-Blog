@@ -18,6 +18,16 @@ export const initialStore=()=>{
 
 export default function storeReducer(store, action = {}) {
   switch(action.type){
+    case 'champion_details':
+      return {
+        ...store,
+      details: action.payload
+    }
+    case 'league_of_legends':
+      return {
+        ...store,
+        champions: action.payload
+      }
     case 'add_task':
 
       const { id,  color } = action.payload

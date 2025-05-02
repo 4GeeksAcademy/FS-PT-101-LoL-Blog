@@ -6,11 +6,17 @@ export const Navbar = () => {
 		<nav className="navbar navbar-light bg-light">
 			<div className="container">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<img className="logoHome" src="src/assets/img/logo.png"></img>
 				</Link>
 				<div className="ml-auto">
 					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
+					<div className="dropdown">
+  					<button className="btn dropdownButton dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    				Favorites
+  					</button>
+  					<ul className="dropdown-menu">
+  					</ul>
+					</div>
 					</Link>
 				</div>
 			</div>
