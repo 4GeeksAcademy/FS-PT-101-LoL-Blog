@@ -1,23 +1,21 @@
 export const initialStore=()=>{
   return{
     message: null,
-    todos: [
-      {
-        id: 1,
-        title: "Make the bed",
-        background: null,
-      },
-      {
-        id: 2,
-        title: "Do my homework",
-        background: null,
-      }
-    ]
+    favourite: []
   }
 }
 
 export default function storeReducer(store, action = {}) {
   switch(action.type){
+    case 'fav_champion':
+      if (store.favourite.includes(action.payload)) {
+        return store;
+      }
+    
+      return {
+        ...store,
+        favourite: [...store.favourite, action.payload]
+      };
     case 'champion_details':
       return {
         ...store,

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import useGlobalReducer from "../hooks/useGlobalReducer";
 
 export const ChampionCard = ({name}) => {
-
+    const { store, dispatch } = useGlobalReducer();
 
 
    let champion = ""
@@ -71,7 +72,7 @@ return (
         <h3 className="colorFuente p-3">{name}</h3>
         <div className="d-flex justify-content-center m-3">
             <Link className="btn boton1 m-3" to={'/details/'+champion}>Champion Profile</Link>
-            <button className="btn boton2 m-3">Add fav</button>
+            <button className="btn boton2 m-3" /*onClick={() => dispatch({ type: 'fav_champion', payload: name })}*/>Add fav</button>
         </div>
      </div>
 	</div>
