@@ -9,12 +9,14 @@ export default function storeReducer(store, action = {}) {
   switch(action.type){
     case 'fav_champion':
       if (store.favourite.includes(action.payload)) {
+        store.favourite.filter(champ => champ !== action.payload)
         return store;
       }
-    
-      return {
-        ...store,
-        favourite: [...store.favourite, action.payload]
+      else{
+        return {
+          ...store,
+          favourite: [...store.favourite, action.payload]
+        }
       };
     case 'champion_details':
       return {
