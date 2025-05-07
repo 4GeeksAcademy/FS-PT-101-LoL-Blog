@@ -98,19 +98,26 @@ height: 3em;
 .boton2:hover{
     
     background-color:rgb(173, 167, 39);
+    color: black;
+}
+
+.boton4{
+    background-color: rgb(173, 167, 39);;
+    color: black;
+    float: left;
+    width: 10em;
+    display: flex;
+    align-self: center;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.boton4:hover{
+    
+    background-color:white !important;
     color: white;
-}
-.boton2:focus{
-    
-    background-color:rgb(173, 167, 39) !important;
-    color: white !important;
-    border: none !important;
-}
-.boton2:active{
-    
-    background-color:rgb(173, 167, 39) !important;
-    color: white !important;
-    border: none !important;
 }
 .dropdownButton{
     background-color:rgb(173, 167, 39);
@@ -148,4 +155,12 @@ height: 3em;
         filter: brightness(1.25);
         border: none !important;
     
+    }
+    .favoritos{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .favoritos:hover{
+        background-color: #ccdae7;
     }
