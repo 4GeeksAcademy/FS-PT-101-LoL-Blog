@@ -6,6 +6,12 @@ export const Navbar = () => {
 
 const {store, dispatch} = useGlobalReducer()
 
+const deleteChampion = (name) => {
+
+        dispatch({ type: 'fav_champion', payload: name })
+
+}
+
 
 
 	return (
@@ -74,12 +80,13 @@ const {store, dispatch} = useGlobalReducer()
 						}
 						return(
 						<React.Fragment key={i}>
-						<li className="p-3 favoritos" >{el}</li>
-						{i !== store.favourite.length - 1 && <li className="p-0"><hr className="dropdown-divider m-0 p-0"/></li>}
+						<li className="p-3 favoritos">{el} <i className="fa-solid fa-xmark closeWindow mt-1" onClick={() => deleteChampion(el)}></i></li>
+						<li className="p-0"><hr className="dropdown-divider m-0 p-0"/></li>
 						</React.Fragment>	
 						)}
 						)
 					}
+					<li className="p-3 favouriteCounter">{`${store.favourite.length} favourite champions`}</li>
   					</ul>
 					</div>
 				</div>

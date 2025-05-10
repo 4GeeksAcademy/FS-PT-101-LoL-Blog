@@ -164,3 +164,16 @@ height: 3em;
     .favoritos:hover{
         background-color: #ccdae7;
     }
+    .favouriteCounter{
+        font-size: 0.75em;
+        font-style: italic;
+    }
+    .closeWindow{
+        color: #d81313;
+        float: right;
+    }
+    
+    .closeWindow:hover{
+        color: #f51515;
+        cursor: pointer;
+    }

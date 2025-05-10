@@ -77,7 +77,7 @@ return (
         <h3 className="colorFuente p-3">{name}</h3>
         <div className="d-flex justify-content-center m-3">
             <Link className="btn boton1 m-3" to={'/details/'+champion}>Champion Profile</Link>
-            <button className={`btn m-3 ${store.favourite.includes(name) ? 'boton4' : 'boton2'}`} id="fav" onClick={() => addToFavourites(name)}><i class="fa-solid fa-star"></i></button>
+            <button className={`btn m-3 ${store.favourite.includes(name) ? 'boton4' : 'boton2'}`} id="fav" onClick={() => addToFavourites(name)}><i className="fa-solid fa-star"></i></button>
         </div>
      </div>
 	</div>
